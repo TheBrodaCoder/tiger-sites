@@ -5,6 +5,9 @@ const theme = extendTheme({
   components: {
     Layout: LayoutStyles,
   },
+  sizes: {
+    content: "1260px",
+  },
   styles: {
     global: {
       "html, body, #root, #__next": {

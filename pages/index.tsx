@@ -1,4 +1,4 @@
-import { Stack } from "@chakra-ui/react";
+import { Heading, HStack, Text, VStack } from "@chakra-ui/react";
 import type { NextPage } from "next";
 import Head from "next/head";
 
@@ -8,7 +8,7 @@ export async function getStaticProps() {
   return {
     props: {
       layoutProps: {
-        variant: "onlyContent",
+        variant: "onlyFooter",
         bgImage: largerTiger,
       },
     },
@@ -30,7 +30,13 @@ const Home: NextPage = () => {
           content="The personal website of Ruben Tigre, an 'always in good mood' Frontend developer"
         />
       </Head>
-      <Stack></Stack>
+      <VStack>
+        <VStack>
+          <Heading>Tiger Sites</Heading>
+          <Text>A NextJs template powered with Chakra and TS</Text>
+        </VStack>
+        <HStack></HStack>
+      </VStack>
     </>
   );
 };
