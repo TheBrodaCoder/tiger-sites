@@ -21,11 +21,11 @@ const LayoutStyles: ComponentMultiStyleConfig = {
       flexDir: "column",
       alignItems: "center",
       w: "full",
-      h: "full",
+      minH: "full",
       zIndex: 5,
     },
     RenderContainer: {
-      h: "full",
+      minH: "full",
       flexDir: "column",
       alignItems: "center",
       pt: "120px",

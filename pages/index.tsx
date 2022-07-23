@@ -1,4 +1,6 @@
+import { Stack } from "@chakra-ui/react";
 import type { NextPage } from "next";
+import Head from "next/head";
 
 import largerTiger from "../public/largerTiger.png";
 
@@ -6,7 +8,7 @@ export async function getStaticProps() {
   return {
     props: {
       layoutProps: {
-        variant: "complete",
+        variant: "onlyContent",
         bgImage: largerTiger,
       },
     },
@@ -14,7 +16,23 @@ export async function getStaticProps() {
 }
 
 const Home: NextPage = () => {
-  return <div>Esto es una homepage</div>;
+  return (
+    <>
+      <Head>
+        <title>Tiger-sites a Next and Chakra UI template</title>
+        <meta
+          name="description"
+          content="The personal website of Ruben Tigre, an 'always in good mood' Frontend developer"
+        />
+
+        <meta
+          property="og:description"
+          content="The personal website of Ruben Tigre, an 'always in good mood' Frontend developer"
+        />
+      </Head>
+      <Stack></Stack>
+    </>
+  );
 };
 
 export default Home;

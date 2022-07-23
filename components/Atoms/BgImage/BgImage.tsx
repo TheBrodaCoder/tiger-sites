@@ -12,6 +12,7 @@ function BgImage(props: ImageProps) {
       objectFit="cover"
       objectPosition={objectPosition}
       alt="bgImage"
+      id="bgImage"
     />
   );
 }
